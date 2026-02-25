@@ -26,6 +26,7 @@ controle de acesso baseado em permissões.
 
 O projeto segue separação clara de responsabilidades:
 
+```shell
 src/
 ├── 📁 configs/       # Conexão com banco de dados (Mongoose)
 ├── 📁 controllers/   # Camada de controle HTTP (Request/Response)
@@ -38,6 +39,7 @@ src/
 ├── 📁 serializers/   # Formatação e transformação de respostas
 ├── 📜 app.ts         # Configuração do Express e Middlewares globais
 └── 📜 server.ts      # Ponto de entrada e inicialização do servidor
+```
 
 ### Padrões aplicados
 
