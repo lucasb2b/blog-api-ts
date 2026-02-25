@@ -178,8 +178,8 @@ escaláveis utilizando o ecossistema JavaScript.
 
 ## 👨‍💻 Autor
 
-Lucas Lima
+Lucas Lima<br/>
 Full Stack JavaScript Developer
 
-LinkedIn: https://www.linkedin.com/in/lucas-lima-brito/
+LinkedIn: https://www.linkedin.com/in/lucas-lima-brito/<br/>
 GitHub: https://github.com/lucasb2b
