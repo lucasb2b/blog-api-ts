@@ -27,17 +27,17 @@ controle de acesso baseado em permissões.
 O projeto segue separação clara de responsabilidades:
 
 src/
-├── configs/ # Conexão com banco de dados
-├── controllers/ # Camada de controle HTTP
-├── services/ # Regras de negócio
-├── models/ # Schemas Mongoose
-├── routes/ # Definição das rotas
-├── middlewares/ # Autenticação e autorização
-├── validators/ # Validação de dados
-├── dto/ # Data Transfer Objects
-├── serializers/ # Formatação de resposta
-├── app.ts # Configuração principal
-├── server.ts # Inicialização do servidor
+├── 📁 configs/       # Conexão com banco de dados (Mongoose)
+├── 📁 controllers/   # Camada de controle HTTP (Request/Response)
+├── 📁 services/      # Camada de serviços (Regras de negócio)
+├── 📁 models/        # Definição de Schemas e Models do Mongoose
+├── 📁 routes/        # Definição e agrupamento das rotas
+├── 📁 middlewares/   # Filtros de Autenticação e Autorização
+├── 📁 validators/    # Esquemas de validação de dados (Zod/Joi)
+├── 📁 dto/           # Data Transfer Objects (Tipagem de entrada)
+├── 📁 serializers/   # Formatação e transformação de respostas
+├── 📜 app.ts         # Configuração do Express e Middlewares globais
+└── 📜 server.ts      # Ponto de entrada e inicialização do servidor
 
 ### Padrões aplicados
 
