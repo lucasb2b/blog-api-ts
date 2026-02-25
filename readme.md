@@ -26,13 +26,18 @@ controle de acesso baseado em permissões.
 
 O projeto segue separação clara de responsabilidades:
 
-src/ ├── configs/ \# Conexão com banco de dados ├── controllers/ \#
-Camada de controle HTTP ├── services/ \# Regras de negócio ├── models/
-\# Schemas Mongoose ├── routes/ \# Definição das rotas ├── middlewares/
-\# Autenticação e autorização ├── validators/ \# Validação de dados ├──
-dto/ \# Data Transfer Objects ├── serializers/ \# Formatação de resposta
-├── app.ts \# Configuração principal ├── server.ts \# Inicialização do
-servidor
+src/
+├── configs/ # Conexão com banco de dados
+├── controllers/ # Camada de controle HTTP
+├── services/ # Regras de negócio
+├── models/ # Schemas Mongoose
+├── routes/ # Definição das rotas
+├── middlewares/ # Autenticação e autorização
+├── validators/ # Validação de dados
+├── dto/ # Data Transfer Objects
+├── serializers/ # Formatação de resposta
+├── app.ts # Configuração principal
+├── server.ts # Inicialização do servidor
 
 ### Padrões aplicados
 
@@ -77,26 +82,38 @@ servidor
 
 ### 1. Clone o repositório
 
-git clone https://github.com/lucasb2b/blog-api-ts.git cd blog-api-ts
+```bash
+git clone https://github.com/lucasb2b/blog-api-ts.git 
+cd blog-api-ts
+```
 
 ### 2. Instale as dependências
 
+```bash
 npm install
+```
 
 ### 3. Configure as variáveis de ambiente
 
 Crie um arquivo `.env` na raiz do projeto:
 
+```bash
 PORT=3000 MONGO_URI=mongodb://localhost:27017/blogdb
 JWT_SECRET=sua_chave_secreta
+```
 
 ### 4. Execute em modo desenvolvimento
 
+```bash
 npm run dev
+```
 
 ### 5. Build para produção
 
-npm run build npm start
+```bash
+npm run build 
+npm start
+```
 
 ------------------------------------------------------------------------
 
@@ -104,25 +121,37 @@ npm run build npm start
 
 ### Autenticação
 
-POST /users/login
+`POST /users/login`
 
 Body:
 
-{ "email": "user@email.com", "password": "123456" }
+```json
+{ 
+  "email": "user@email.com", 
+  "password": "123456" 
+}
+```
 
 ------------------------------------------------------------------------
 
 ### Criar Post
 
-POST /posts
+`POST /posts
 
 Headers:
 
+```yaml
 Authorization: Bearer {token}
+```
 
 Body:
 
-{ "title": "Meu Post", "content": "Conteúdo do post" }
+```json
+{ 
+  "title": "Meu Post", 
+  "content": "Conteúdo do post" 
+}
+```
 
 ------------------------------------------------------------------------
 
@@ -147,8 +176,8 @@ escaláveis utilizando o ecossistema JavaScript.
 
 ## 👨‍💻 Autor
 
-Lucas Brito\
+Lucas Lima
 Full Stack JavaScript Developer
 
-LinkedIn: https://www.linkedin.com/in/lucas-lima-brito/\
+LinkedIn: https://www.linkedin.com/in/lucas-lima-brito/
 GitHub: https://github.com/lucasb2b
