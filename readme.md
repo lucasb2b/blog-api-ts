@@ -136,7 +136,7 @@ Body:
 
 ### Criar Post
 
-`POST /posts
+`POST /posts`
 
 Headers:
 
